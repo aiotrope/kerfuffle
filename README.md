@@ -1,0 +1,2 @@
+# kerfuffle
+Magnetar project revision
