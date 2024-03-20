@@ -1,2 +1,2 @@
 # kerfuffle
-Magnetar project revision
+Q&A System (Magnetar project revision).
