@@ -12,6 +12,8 @@ import { expressjwt } from 'express-jwt'
 import { sanitize } from 'isomorphic-dompurify'
 import Redis from 'ioredis'
 import { cleanEnv, port, str, num } from 'envalid'
+import morgan from 'morgan'
+import winston from 'winston'
 
 export {
   express,
@@ -31,4 +33,6 @@ export {
   port,
   str,
   num,
+  morgan,
+  winston,
 }
