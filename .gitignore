@@ -1,0 +1,14 @@
+.env.*
+*.orig
+*.pyc
+*.swp
+
+app-cache/
+production-database-data/
+/app-secrets/
+
+/.idea/
+/.vscode/
+.DS_Store
+
+llm/

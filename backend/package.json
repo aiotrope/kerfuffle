@@ -20,7 +20,7 @@
     "url": "git+https://github.com/aiotrope/kerfuffle.git"
   },
   "author": "Arnel Imperial",
-  "license": "0BSD",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/aiotrope/kerfuffle/issues"
   },
