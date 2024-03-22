@@ -1,6 +1,6 @@
-FROM node:20.11.1-bullseye-slim
+FROM node:20.11.1-alpine
 
-RUN apt-get update && apt-get install -y --no-install-recommends dumb-init
+# RUN apt-get update && apt-get install -y --no-install-recommends dumb-init
 
 ENV NODE_ENV development
 
@@ -8,12 +8,12 @@ ENV PATH /app/node_modules/.bin:$PATH
 
 WORKDIR /app
 
-COPY --chown=node:node . .
+# COPY --chown=node:node . .
 
-RUN yarn install --frozen-lockfile
+RUN yarn install 
 
 EXPOSE 5173
 
-USER node
+# USER node
 
-CMD ["dumb-init", "yarn", "dev"]
+CMD ["yarn", "dev"]

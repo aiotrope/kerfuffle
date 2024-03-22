@@ -4,6 +4,8 @@ require('express-async-errors')
 import { loggerUtil } from './util/loggerUtil'
 import { endPoint404 } from './middleware/error'
 
+import courseRouter from './routes/courseRoutes'
+
 const app = express()
 
 app.use(cookieParser())
@@ -25,6 +27,8 @@ app.disable('x-powered-by')
 if (environ.isDev) app.use(loggerUtil)
 
 app.use(nocache())
+
+app.use('/', courseRouter)
 
 app.use(endPoint404)
 

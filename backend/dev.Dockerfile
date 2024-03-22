@@ -1,6 +1,6 @@
-FROM node:20.11.1-bullseye-slim
+FROM node:20.11.1-alpine
 
-RUN apt-get update && apt-get install -y --no-install-recommends dumb-init
+# RUN apt-get update && apt-get install -y --no-install-recommends dumb-init
 
 ENV NODE_ENV development
 
@@ -14,4 +14,4 @@ EXPOSE 8080
 
 USER node
 
-CMD ["dumb-init", "yarn", "dev"]
+CMD ["yarn", "dev"]

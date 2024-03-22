@@ -1,0 +1,2 @@
+### get courses
+GET http://localhost:7800/api/courses HTTP/1.1
