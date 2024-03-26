@@ -1,14 +1,19 @@
-import { Redis } from '../deps'
+// deno-lint-ignore-file
+import { connect } from "../deps.ts";
 
-import environ from '../environ'
+const redis = await connect({
+  hostname: "redis",
+  port: 6379,
+});
 
-const redis = new Redis(environ.REDIS_URL)
-
-const cacheMethodCalls = (object, methodsToFlushCacheWith = []) => {
+const cacheMethodCalls = (
+  object: any,
+  methodsToFlushCacheWith: string[] = []
+) => {
   const handler = {
-    get: (module, methodName) => {
-      const method = module[methodName]
-      return async (...methodArgs) => {
+    get: (module: any, methodName: any) => {
+      const method: any = module[methodName]
+      return async (...methodArgs: any) => {
         if (methodsToFlushCacheWith.includes(methodName)) {
           await redis.flushdb()
           return await method.apply(this, methodArgs)

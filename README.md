@@ -5,9 +5,9 @@ Q&A System (Magnetar project revision).
 
 ```
 # build docker images
-$ cd llm && docker build -t llm . -f dev.Dockerfile
-$ cd backend && docker build -t backend . -f dev.Dockerfile
-$ cd frontend && docker build -t frontend . -f dev.Dockerfile
+$ cd llm-api && docker build -t llm-api . -f dev.Dockerfile
+$ cd kerfuffle-api && docker build -t kerfuffle-api . -f dev.Dockerfile
+$ cd kerfuffle-ui && docker build -t kerfuffle-ui . -f dev.Dockerfile
 
 # DEV MODE
 # buid/rebuild docker images based on docker-compose on debug mode; running on port 7800

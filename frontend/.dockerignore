@@ -6,6 +6,7 @@ logs
 .git
 .gitignore
 *.Dockerfile
+Dockerfile
 .env
 .dockerignore
 example.*

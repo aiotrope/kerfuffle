@@ -1,4 +1,3 @@
-.env.*
 *.orig
 *.pyc
 *.swp
@@ -12,3 +11,5 @@ production-database-data/
 .DS_Store
 
 llm/
+
+.env.*
