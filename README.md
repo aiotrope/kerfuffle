@@ -1,5 +1,5 @@
 # kerfuffle
-Q&A System
+Q&A System.
 
 ## CLI Commands
 
