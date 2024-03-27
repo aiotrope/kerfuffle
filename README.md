@@ -1,5 +1,5 @@
 # kerfuffle
-Q&A System (Magnetar project revision).
+Q&A System
 
 ## CLI Commands
 
