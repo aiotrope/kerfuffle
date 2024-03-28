@@ -1,5 +1,5 @@
 # kerfuffle
-Q&A System.
+Q&A System
 
 ## CLI Commands
 
@@ -10,7 +10,7 @@ $ cd kerfuffle-api && docker build -t kerfuffle-api . -f dev.Dockerfile
 $ cd kerfuffle-ui && docker build -t kerfuffle-ui . -f dev.Dockerfile
 
 # DEV MODE
-# buid/rebuild docker images based on docker-compose on debug mode; running on port 7800
+# build/rebuild docker images based on docker-compose on debug mode; running on port 7800
 # remove app-cache/ && production-database-data/ from previous production mode before proceeding
 # to restart on debug mode on port 7800
 $ cd kerfuffle && docker compose -f docker-compose.dev.yml up --build
